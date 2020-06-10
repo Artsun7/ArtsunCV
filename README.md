@@ -1,3 +1,4 @@
 # Hello-World
 My first repository.
-A writer, translator (English-Russian) and web developer.
+A writer, translator and web developer.
+Languages: English, Russian.
