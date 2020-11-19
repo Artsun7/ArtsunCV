@@ -1,0 +1,57 @@
+html,
+h1,
+p {
+	margin: 0;
+}
+
+body {
+	text-align: center;
+	margin: 0 auto;
+	background-color: var(--light);
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+	font-family: "Sacramento", cursive;
+	font-size: 5.5rem;
+	color: var(--blue);
+}
+
+h2,
+h3 {
+	font-family: "Josefin Slab", serif;
+	color: var(--blue);
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.2rem;
+	color: var(--dark);
+	line-height: 2;
+}
+
+hr {
+	width: 5%;
+	border: 6px dotted var(--blue); // Получаются 2 ряда точек.
+	border-bottom: none; // Убрать нижний ряд точек.
+}
+
+.top-container {
+	min-width: 300px;
+	margin: 2% 0 2% 0;
+}
+
+.middle-container {
+	padding: 5% 0 5%;
+}
+.bottom-container {
+	padding: 2rem 0 1rem;
+}

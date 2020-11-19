@@ -1,0 +1,64 @@
+.skill-row {
+	width: 50%;
+	margin: 4rem auto 3rem;
+	text-align: left;
+
+	img {
+		width: 25%;
+		max-width: 8.5rem;
+		margin-bottom: 1rem;
+	}
+
+	// Использовать св-во float для позиционирования только в сочетании изображения с текстом:
+	&__img-book {
+		float: left;
+		margin-right: 1.875rem;
+	}
+
+	&__img-gears {
+		float: right;
+		margin-left: 1.875rem;
+	}
+
+	//// Очистить (убрать) все слева от параграфа (чтобы не было изобр-я слева):
+	//&__left {
+	//	clear: left;
+	//}
+
+	//// Очистить все справа от параграфа (чтобы не было изобр-я справа):
+	//&__right {
+	//	clear: right;
+	//}
+}
+
+.contact-me p {
+	margin-bottom: 2rem;
+}
+
+// Быстрое создание кнопки CSS на https://css3buttongenerator.com/
+.btn {
+	background: #597fa0;
+	background-image: -webkit-linear-gradient(top, #597fa0, #0c2f47);
+	background-image: -moz-linear-gradient(top, #597fa0, #0c2f47);
+	background-image: -ms-linear-gradient(top, #597fa0, #0c2f47);
+	background-image: -o-linear-gradient(top, #597fa0, #0c2f47);
+	background-image: linear-gradient(to bottom, #597fa0, #0c2f47);
+	-webkit-border-radius: 17;
+	-moz-border-radius: 17;
+	border-radius: 17px;
+	font-family: "Open Sans", sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: #b0c4c4;
+	background-image: -webkit-linear-gradient(top, #b0c4c4, #394f62);
+	background-image: -moz-linear-gradient(top, #b0c4c4, #394f62);
+	background-image: -ms-linear-gradient(top, #b0c4c4, #394f62);
+	background-image: -o-linear-gradient(top, #b0c4c4, #394f62);
+	background-image: linear-gradient(to bottom, #b0c4c4, #394f62);
+	text-decoration: none;
+}

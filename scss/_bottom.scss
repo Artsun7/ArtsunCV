@@ -1,0 +1,20 @@
+.bottom-container {
+	background-color: var(--blue);
+
+	a {
+		color: var(--dark);
+		font-family: "Open Sans", sans-serif;
+		margin: 0.7rem 1rem;
+		text-decoration: none;
+
+		&:hover {
+			color: var(--light);
+		}
+	}
+
+	p {
+		color: var(--light);
+		font-size: 0.8rem;
+		padding: 1.5rem 0 0.7rem;
+	}
+}
