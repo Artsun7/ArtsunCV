@@ -17,7 +17,7 @@
 		max-width: 9rem;
 		opacity: 0.1;
 		// Объявление анимации замного шара:
-		animation: globeIn 0.7s linear 4s;
+		animation: globeIn 1s linear 4s;
 		// Сохранение последнего св-ва анимации:
 		animation-fill-mode: forwards;
 	}
@@ -30,7 +30,7 @@
 		max-width: 16rem;
 		opacity: 0.1;
 		// Объявление анимации головы с облаками:
-		animation: headIn 0.7s linear 3s;
+		animation: headIn 1s linear 3s;
 		// Сохранение последнего св-ва анимации:
 		animation-fill-mode: forwards;
 	}
@@ -44,6 +44,7 @@
 	}
 
 	50% {
+		opacity: 1;
 		transform: translateX(4rem);
 	}
 
@@ -58,6 +59,10 @@
 		opacity: 0.1;
 	}
 
+	50% {
+		opacity: 1;
+	}
+
 	to {
 		opacity: 0.5;
 	}
@@ -66,6 +71,10 @@
 @keyframes headIn {
 	from {
 		opacity: 0.1;
+	}
+
+	50% {
+		opacity: 1;
 	}
 
 	to {
