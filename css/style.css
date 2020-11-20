@@ -50,7 +50,7 @@ hr {
 }
 
 .middle-container {
-  padding: 1% 0 5%;
+  padding: 2% 0 5%;
 }
 
 .bottom-container {
@@ -74,8 +74,8 @@ hr {
   width: 10%;
   max-width: 9rem;
   opacity: 0.1;
-  -webkit-animation: globeIn 0.7s linear 4s;
-          animation: globeIn 0.7s linear 4s;
+  -webkit-animation: globeIn 1s linear 4s;
+          animation: globeIn 1s linear 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -87,8 +87,8 @@ hr {
   width: 15%;
   max-width: 16rem;
   opacity: 0.1;
-  -webkit-animation: headIn 0.7s linear 3s;
-          animation: headIn 0.7s linear 3s;
+  -webkit-animation: headIn 1s linear 3s;
+          animation: headIn 1s linear 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -100,6 +100,7 @@ hr {
             transform: translateX(-4rem);
   }
   50% {
+    opacity: 1;
     -webkit-transform: translateX(4rem);
             transform: translateX(4rem);
   }
@@ -117,6 +118,7 @@ hr {
             transform: translateX(-4rem);
   }
   50% {
+    opacity: 1;
     -webkit-transform: translateX(4rem);
             transform: translateX(4rem);
   }
@@ -131,6 +133,9 @@ hr {
   from {
     opacity: 0.1;
   }
+  50% {
+    opacity: 1;
+  }
   to {
     opacity: 0.5;
   }
@@ -139,6 +144,9 @@ hr {
 @keyframes globeIn {
   from {
     opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
   }
   to {
     opacity: 0.5;
@@ -149,6 +157,9 @@ hr {
   from {
     opacity: 0.1;
   }
+  50% {
+    opacity: 1;
+  }
   to {
     opacity: 0.5;
   }
@@ -157,6 +168,9 @@ hr {
 @keyframes headIn {
   from {
     opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
   }
   to {
     opacity: 0.5;
