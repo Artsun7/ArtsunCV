@@ -61,7 +61,11 @@ hr {
   position: relative;
   width: 30%;
   max-width: 20rem;
-  opacity: 0.5;
+  opacity: 0;
+  -webkit-animation: cloudIn 3s ease-out 0.5s;
+          animation: cloudIn 3s ease-out 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .top-container__globe {
@@ -69,7 +73,11 @@ hr {
   right: 3%;
   width: 10%;
   max-width: 9rem;
-  opacity: 0.5;
+  opacity: 0.1;
+  -webkit-animation: globeIn 0.7s linear 4s;
+          animation: globeIn 0.7s linear 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .top-container__human {
@@ -78,7 +86,81 @@ hr {
   left: 6%;
   width: 15%;
   max-width: 16rem;
-  opacity: 0.5;
+  opacity: 0.1;
+  -webkit-animation: headIn 0.7s linear 3s;
+          animation: headIn 0.7s linear 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloudIn {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+  50% {
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes cloudIn {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+  50% {
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes globeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes globeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes headIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes headIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
 
 .profile {
@@ -86,8 +168,18 @@ hr {
 }
 
 .profile__me {
+  width: 100px;
   border-radius: 50%;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+.profile__me:hover {
+  -webkit-transform: scale(1.99);
+          transform: scale(1.99);
 }
 
 .skill-row {
