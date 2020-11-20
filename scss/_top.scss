@@ -3,7 +3,11 @@
 		position: relative;
 		width: 30%;
 		max-width: 20rem;
-		opacity: 0.5;
+		opacity: 0;
+		// Объявление имени анимации (cloudIn) облака, его длит-сть, кривая скорости, задержка при загрузке страницы (см. св-ва ниже):
+		animation: cloudIn 3s ease-out 0.5s;
+		// Сохранение св-ва анимации (forwards) в последней keyframe:
+		animation-fill-mode: forwards;
 	}
 
 	&__globe {
@@ -11,7 +15,11 @@
 		right: 3%;
 		width: 10%;
 		max-width: 9rem;
-		opacity: 0.5;
+		opacity: 0.1;
+		// Объявление анимации замного шара:
+		animation: globeIn 0.7s linear 4s;
+		// Сохранение последнего св-ва анимации:
+		animation-fill-mode: forwards;
 	}
 
 	&__human {
@@ -20,6 +28,47 @@
 		left: 6%;
 		width: 15%;
 		max-width: 16rem;
+		opacity: 0.1;
+		// Объявление анимации головы с облаками:
+		animation: headIn 0.7s linear 3s;
+		// Сохранение последнего св-ва анимации:
+		animation-fill-mode: forwards;
+	}
+}
+
+// Св-ва анимации облака:
+@keyframes cloudIn {
+	0% {
+		opacity: 0.3;
+		transform: translateX(-4rem);
+	}
+
+	50% {
+		transform: translateX(4rem);
+	}
+
+	100% {
+		opacity: 0.5;
+		transform: translateX(0);
+	}
+}
+
+@keyframes globeIn {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 0.5;
+	}
+}
+
+@keyframes headIn {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
 		opacity: 0.5;
 	}
 }
@@ -28,7 +77,14 @@
 	margin-bottom: 2rem;
 
 	&__me {
+		width: 100px;
 		border-radius: 50%;
-		padding-top: 2rem;
+		margin-top: 2rem;
+		transition: transform 0.7s;
+	}
+
+	// Трансформация при наведении мыши:
+	&__me:hover {
+		transform: scale(1.99);
 	}
 }
