@@ -16,6 +16,7 @@
 		width: 10%;
 		max-width: 9rem;
 		opacity: 0.1;
+		transform: scale(0.5);
 		// Объявление анимации замного шара:
 		animation: globeIn 1s linear 4s;
 		// Сохранение последнего св-ва анимации:
@@ -29,6 +30,7 @@
 		width: 15%;
 		max-width: 16rem;
 		opacity: 0.1;
+		transform: scale(0.5);
 		// Объявление анимации головы с облаками:
 		animation: headIn 1s linear 3s;
 		// Сохранение последнего св-ва анимации:
@@ -57,28 +59,34 @@
 @keyframes globeIn {
 	from {
 		opacity: 0.1;
+		transform: scale(0.5);
 	}
 
 	50% {
 		opacity: 1;
+		transform: scale(1.5);
 	}
 
 	to {
 		opacity: 0.5;
+		transform: scale(1);
 	}
 }
 
 @keyframes headIn {
 	from {
 		opacity: 0.1;
+		transform: scale(0.5);
 	}
 
 	50% {
 		opacity: 1;
+		transform: scale(1.5);
 	}
 
 	to {
 		opacity: 0.5;
+		transform: scale(1);
 	}
 }
 
