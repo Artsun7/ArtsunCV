@@ -74,6 +74,8 @@ hr {
   width: 10%;
   max-width: 9rem;
   opacity: 0.1;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
   -webkit-animation: globeIn 1s linear 4s;
           animation: globeIn 1s linear 4s;
   -webkit-animation-fill-mode: forwards;
@@ -87,6 +89,8 @@ hr {
   width: 15%;
   max-width: 16rem;
   opacity: 0.1;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
   -webkit-animation: headIn 1s linear 3s;
           animation: headIn 1s linear 3s;
   -webkit-animation-fill-mode: forwards;
@@ -132,48 +136,72 @@ hr {
 @-webkit-keyframes globeIn {
   from {
     opacity: 0.1;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   to {
     opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes globeIn {
   from {
     opacity: 0.1;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   to {
     opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @-webkit-keyframes headIn {
   from {
     opacity: 0.1;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   to {
     opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes headIn {
   from {
     opacity: 0.1;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   to {
     opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
